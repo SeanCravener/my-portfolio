@@ -1,4 +1,5 @@
 import { Frame } from "@react95/core";
+import "./Window.css";
 
 function Notepad({ content }) {
   const contentSelector = (line) => {
@@ -19,16 +20,7 @@ function Notepad({ content }) {
   };
 
   return (
-    <Frame
-      bg="white"
-      boxShadow="in"
-      height="100%"
-      style={{
-        overflowY: "auto",
-        maxHeight: "60vh",
-        maxWidth: "60vw",
-      }}
-    >
+    <Frame bg="white" boxShadow="in" className="window">
       {content.map((line, index) => {
         return (
           <div key={index} style={{ margin: "1rem" }}>

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { WindowContext } from "./WindowContext";
+import { WindowContext } from "../context/WindowContext";
 import { Modal, List } from "@react95/core";
 import Explorer from "./Explorer";
 import IframeViewer from "./IframeViewer";
@@ -50,7 +50,6 @@ export default function Window({ selectedWindow }) {
   return (
     <Modal
       title={selectedWindow.title}
-      defaultPosition={{ x: 100, y: 100 }}
       closeModal={handleCloseWindow}
       menu={selectedWindow.menu && populateMenu(selectedWindow.menu)}
       buttons={[{ value: "Close", onClick: handleCloseWindow }]}
