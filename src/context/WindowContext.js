@@ -5,13 +5,10 @@ export const WindowContext = createContext();
 
 export const WindowProvider = (props) => {
   const windows = Config;
-  const [activeWindow, setActiveWindow] = useState(windows[0]);
+  const [activeWindow, setActiveWindow] = useState(windows[1]);
 
-  const openWindow = (id) => {
-    const window = windows.find((window) => window.id === id);
-    if (window) {
-      setActiveWindow(window);
-    }
+  const openWindow = (window) => {
+    setActiveWindow(window);
   };
 
   const closeWindow = (id) => {
