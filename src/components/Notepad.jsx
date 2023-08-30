@@ -20,7 +20,7 @@ function Notepad({ content }) {
   };
 
   return (
-    <Frame bg="white" boxShadow="in" className="window">
+    <Frame bg="white" boxShadow="in" className="frame-container">
       {content.map((line, index) => {
         return (
           <div key={index} style={{ margin: "1rem" }}>
