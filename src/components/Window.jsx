@@ -8,6 +8,8 @@ import Notepad from "./Notepad";
 export default function Window({ selectedWindow }) {
   const { closeWindow } = useContext(WindowContext);
 
+  const mobile = window.innerWidth < 600;
+
   const handleCloseWindow = () => {
     closeWindow(selectedWindow);
   };
@@ -52,6 +54,12 @@ export default function Window({ selectedWindow }) {
       title={selectedWindow.title}
       closeModal={handleCloseWindow}
       menu={selectedWindow.menu && populateMenu(selectedWindow.menu)}
+      style={{
+        left: mobile ? "0%" : "20%",
+        top: mobile ? "0%" : "5%",
+        maxWidth: "100%",
+        maxHeight: "100%",
+      }}
       buttons={[{ value: "Close", onClick: handleCloseWindow }]}
     >
       {typeSelector()}
