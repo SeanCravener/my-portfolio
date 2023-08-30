@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { WindowContext } from "../context/WindowContext";
 import { Modal, List } from "@react95/core";
 import Explorer from "./Explorer";
-import IframeViewer from "./IframeViewer";
 import Notepad from "./Notepad";
 
 export default function Window({ selectedWindow }) {
@@ -18,8 +17,6 @@ export default function Window({ selectedWindow }) {
     switch (selectedWindow.type) {
       case "folder-explorer":
         return <Explorer content={selectedWindow.content} />;
-      case "iframe-viewer":
-        return <IframeViewer content={selectedWindow} />;
       case "notepad":
         console.log(selectedWindow.content);
         return <Notepad content={selectedWindow.content} />;

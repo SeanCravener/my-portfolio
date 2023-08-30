@@ -9,7 +9,7 @@ const FrontendMentor = {
       title: "Single Price Grid Component",
       description:
         "A simple single price grid component built with HTML and CSS",
-      src: "./projects/level-1/single-price-grid/index.html",
+      link: "/projects/frontend-mentor-challenges/single-price-grid/index.html",
       icon: "./images/projects1-icon.svg",
       id: "FrontendMentor-Lvl1-1",
       type: "iframe-viewer",
@@ -29,7 +29,7 @@ const FrontendMentor = {
       title: "Advice Generator App",
       description:
         "A simple advice generator app built with HTML, CSS, JavaScript, React. The app uses the Advice Slip JSON API to generate random advice.",
-      src: "./projects/level-2/advice-generator-app/dist/index.html",
+      link: "/projects/frontend-mentor-challenges/advice-generator-app/dist/index.html",
       icon: "./images/projects1-icon.svg",
       id: "FrontendMentor-Lvl2-1",
       type: "iframe-viewer",

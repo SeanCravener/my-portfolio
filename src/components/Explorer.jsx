@@ -1,13 +1,9 @@
-import { useContext } from "react";
-import { WindowContext } from "../context/WindowContext";
 import { Frame } from "@react95/core";
 import "./Window.css";
 
 export default function Explorer({ content }) {
-  const { openWindow } = useContext(WindowContext);
-
   const handleOpenProject = (project) => {
-    openWindow(project);
+    window.open(project.link, "_blank");
   };
 
   return (
