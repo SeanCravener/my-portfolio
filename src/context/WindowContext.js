@@ -7,8 +7,13 @@ export const WindowProvider = (props) => {
   const applications = Config;
   const [activeWindow, setActiveWindow] = useState(applications[1]);
 
-  const openWindow = (window) => {
-    setActiveWindow(window);
+  const openWindow = (application) => {
+    if (application.type === "link") {
+      window.open(application.link, "_blank");
+      return;
+    }
+
+    setActiveWindow(application);
   };
 
   const closeWindow = (id) => {
