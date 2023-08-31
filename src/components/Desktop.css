@@ -1,0 +1,30 @@
+.desktop-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.desktop {
+  padding: 15px;
+}
+
+.shortcut-container {
+  width: 50px;
+  margin-bottom: 15px;
+  align-content: center;
+}
+
+.shortcut-image {
+  width: 45px;
+  height: 45px;
+}
+
+.shortcut-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.start-menu-icon {
+  width: 45px;
+  height: 45px;
+}

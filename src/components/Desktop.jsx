@@ -2,13 +2,32 @@ import { useContext } from "react";
 import { WindowContext } from "../context/WindowContext";
 import Window from "./Window";
 import { TaskBar, List } from "@react95/core";
+import "./Desktop.css";
 
 function Desktop() {
   const { applications, activeWindow, openWindow } = useContext(WindowContext);
 
   return (
-    <div className="desktop" style={{ width: "100vw", height: "100vh" }}>
-      {activeWindow && <Window selectedWindow={activeWindow} />}
+    <div className="desktop-container">
+      <div className="desktop">
+        {applications.map((application, index) => {
+          return (
+            <div
+              key={index}
+              className="shortcut-container"
+              onClick={() => openWindow(application)}
+            >
+              <img
+                className="shortcut-image"
+                src={application.icon}
+                alt={application.title}
+              />
+              <p className="shortcut-text">{application.title}</p>
+            </div>
+          );
+        })}
+        {activeWindow && <Window selectedWindow={activeWindow} />}
+      </div>
       <TaskBar
         list={
           <List>
@@ -18,9 +37,9 @@ function Desktop() {
                   key={index}
                   icon={
                     <img
+                      className="start-menu-icon"
                       src={application.icon}
                       alt={application.title}
-                      style={{ width: "32px", height: "32px" }}
                     />
                   }
                   onClick={() => openWindow(application)}
