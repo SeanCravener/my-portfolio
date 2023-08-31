@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.9d58792b.css",
+    "main.js": "/my-portfolio/static/js/main.9277f14d.js",
+    "static/media/MS-Sans-Serif.ttf": "/my-portfolio/static/media/MS-Sans-Serif.93905f8d36305f50ab93.ttf",
+    "static/media/MS-Sans-Serif.eot": "/my-portfolio/static/media/MS-Sans-Serif.30dfad5d3b1a7f298823.eot",
+    "static/media/MS-Sans-Serif.woff": "/my-portfolio/static/media/MS-Sans-Serif.82eeac7bf2a95f5c4d29.woff",
+    "static/media/React95Video-Numbers.eot": "/my-portfolio/static/media/React95Video-Numbers.70eb4c838949b5a5d0f5.eot",
+    "static/media/React95Video-Numbers.ttf": "/my-portfolio/static/media/React95Video-Numbers.abf01d42c697853bc208.ttf",
+    "static/media/MS-Sans-Serif.woff2": "/my-portfolio/static/media/MS-Sans-Serif.4fb9ed0f3d81e2fccad0.woff2",
+    "static/media/React95Video-Numbers.woff": "/my-portfolio/static/media/React95Video-Numbers.cc52603db1ac08ac9d3b.woff",
+    "static/media/React95Video-Numbers.woff2": "/my-portfolio/static/media/React95Video-Numbers.1b0c9ed82fb40976ab11.woff2",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/check.svg": "/my-portfolio/static/media/check.cab94f089fae33556518400eea96707f.svg",
+    "static/media/check-disabled.svg": "/my-portfolio/static/media/check-disabled.6c74515b9665a58c67515a6b7d03ecec.svg",
+    "static/media/rightcaret.svg": "/my-portfolio/static/media/rightcaret.4316e9ffed3db2dabed84fe4f8329010.svg",
+    "main.9d58792b.css.map": "/my-portfolio/static/css/main.9d58792b.css.map",
+    "main.9277f14d.js.map": "/my-portfolio/static/js/main.9277f14d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d58792b.css",
+    "static/js/main.9277f14d.js"
+  ]
+}
