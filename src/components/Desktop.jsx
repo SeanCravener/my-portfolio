@@ -5,7 +5,7 @@ import { TaskBar, List } from "@react95/core";
 import "./Desktop.css";
 
 function Desktop() {
-  const { applications, activeWindow, openWindow } = useContext(WindowContext);
+  const { applications, activeWindows, openWindow } = useContext(WindowContext);
 
   return (
     <div className="desktop-container">
@@ -26,7 +26,10 @@ function Desktop() {
             </div>
           );
         })}
-        {activeWindow && <Window selectedWindow={activeWindow} />}
+        {activeWindows &&
+          activeWindows.map((application, index) => {
+            return <Window key={index} selectedWindow={application} />;
+          })}
       </div>
       <TaskBar
         list={
