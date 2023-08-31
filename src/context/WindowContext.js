@@ -4,8 +4,8 @@ import { Config } from "../config/config";
 export const WindowContext = createContext();
 
 export const WindowProvider = (props) => {
-  const windows = Config;
-  const [activeWindow, setActiveWindow] = useState(windows[1]);
+  const applications = Config;
+  const [activeWindow, setActiveWindow] = useState(applications[1]);
 
   const openWindow = (window) => {
     setActiveWindow(window);
@@ -17,7 +17,7 @@ export const WindowProvider = (props) => {
 
   return (
     <WindowContext.Provider
-      value={{ windows, activeWindow, openWindow, closeWindow }}
+      value={{ applications, activeWindow, openWindow, closeWindow }}
     >
       {props.children}
     </WindowContext.Provider>
