@@ -1,7 +1,7 @@
 const AboutMe = {
   id: "about-me",
   title: "About Me",
-  icon: "./images/about-icon.svg",
+  icon: "./images/user-icon.ico",
   type: "notepad",
   menu: [
     {

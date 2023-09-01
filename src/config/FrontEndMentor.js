@@ -3,14 +3,14 @@ const FrontendMentor = {
   id: "frontend-mentor-challenges",
   type: "folder-explorer",
   description: "A collection of Frontend Mentor challenges",
-  icon: "./images/projects2-icon.svg",
+  icon: "./images/program-folder-icon.ico",
   content: [
     {
       title: "Single Price Grid Component",
       description:
         "A simple single price grid component built with HTML and CSS",
       link: "/projects/frontend-mentor-challenges/single-price-grid/index.html",
-      icon: "./images/projects1-icon.svg",
+      icon: "./images/web-document-icon.ico",
       id: "FrontendMentor-Lvl1-1",
       type: "iframe-viewer",
       height: "750px",
@@ -30,7 +30,7 @@ const FrontendMentor = {
       description:
         "A simple advice generator app built with HTML, CSS, JavaScript, React. The app uses the Advice Slip JSON API to generate random advice.",
       link: "/projects/frontend-mentor-challenges/advice-generator-app/dist/index.html",
-      icon: "./images/projects1-icon.svg",
+      icon: "./images/web-document-icon.ico",
       id: "FrontendMentor-Lvl2-1",
       type: "iframe-viewer",
       height: "500px",
