@@ -1,0 +1,247 @@
+:root{
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    --clr-primary-cyan: hsl(179, 84%, 42%);
+    --clr-primary-cyandark: hwb(179 25% 33%);
+
+    --clr-primary-byellow: hsl(71, 73%, 54%);
+
+    --clr-nuetral-lgray: hsl(204, 43%, 93%);
+    --clr-nuetral-Gblue: hsl(218, 22%, 67%);
+
+    --ff-primary: 'Karla', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-400: 1rem;
+    --fs-700: 1.75rem;
+}
+
+
+/* Reset */
+
+
+/* Box sizing rules  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and removes styling on all font types like h1, h2 etc. */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture, svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+
+/* Mobile (main) */
+
+body {
+  background-color: gray;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  margin: 14% 7%;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  flex-direction: column;
+  font-family: var(--ff-primary);
+}
+
+.card1 {
+  background-color: white;
+}
+
+.card2 {
+  background-color: var(--clr-primary-cyandark);
+}
+
+.card3 {
+  background-color: var(--clr-primary-cyan);
+}
+
+.cmain {
+  padding: 1.25rem;
+}
+
+.csec {
+  font-family: var(--ff-primary);
+  margin-bottom: 1rem;
+}
+
+.card1a {
+  font-style: var(--fs-700);
+  color: var(--clr-primary-cyan);
+  font-weight: var(--fw-bold);
+  font-size: 1.25rem;
+  
+}
+
+
+
+.card1b {
+  font-style: var(--fs-400);
+  color: var(--clr-primary-byellow);
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+}
+
+.card1c {
+  font-style: var(--fs-400);
+  color: var(--clr-nuetral-Gblue);
+  font-weight: var(--fw-regular);
+  line-height: 2rem;
+  font-size: .9rem;
+}
+
+.card2a {
+  font-style: var(--fs-400);
+  color: var(--clr-nuetral-lgray);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1.1rem;
+  font-size: 1.1rem;
+}
+
+.price-card {
+  display:inline-flex;
+  text-align: center;
+}
+
+.price2 {
+  font-style: var(--fs-400);
+  color: var(--clr-nuetral-lgray);
+  font-weight: var(--fw-regular);
+  margin:auto;
+}
+
+.price {
+  font-style: var(--fs-700);
+  color: var(--clr-nuetral-lgray);
+  font-weight: var(--fw-bold);
+  font-size: 2rem;
+  margin-right: .9rem;
+}
+
+.card2d {
+  font-style: var(--fs-400);
+  color: var(--clr-nuetral-lgray);
+  font-weight: var(--fw-regular);
+  font-size: .9rem;
+}
+
+.card3a {
+  font-style: var(--fs-700);
+  color: var(--clr-nuetral-lgray);
+  font-weight: var(--fw-bold);
+  font-size: 1.1rem;
+}
+
+.card3b {
+  font-style: var(--fs-400);
+  color: var(--clr-nuetral-lgray);
+  font-weight: var(--fw-regular);
+  font-size: .9rem;
+}
+
+.btn-container {
+  display: flex;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+
+.btn-sign-up {
+  width: 100%;
+  background-color: var(--clr-primary-byellow);
+  color: var(--clr-nuetral-lgray);
+  border: none;
+  border-radius: 6px;
+  font-weight: var(--fw-bold);
+  font-style: var(--fs-700);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Desktop */
+
+@media screen and (min-width: 50em) {
+
+
+  .container {
+    width: 60%;
+    max-width: 600px;
+  }
+
+  .bottom-cards {
+    display: inline-flex;
+  }
+
+  .card2 {
+    width:50%;
+  }
+
+  .card3 {
+    width:50%;
+  }
+}
