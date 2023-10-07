@@ -7,43 +7,33 @@ const FrontendMentor = {
   content: [
     {
       title: "Single Price Grid Component",
-      description:
-        "A simple single price grid component built with HTML and CSS",
-      link: "/projects/frontend-mentor-challenges/single-price-grid/index.html",
+      link: "https://seancravener.github.io/Frontend-Mentor-Single-Price-Grid/",
       icon: "./images/web-document-icon.ico",
-      id: "FrontendMentor-Lvl1-1",
-      type: "iframe-viewer",
-      height: "750px",
-      menu: [
-        {
-          name: "View Code on Github",
-          link: "https://github.com/SeanCravener/frontend-mentor-challenges/tree/main/level-1/single-price-grid",
-        },
-        {
-          name: "View Challenge Page",
-          link: "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
-        },
-      ],
     },
     {
       title: "Advice Generator App",
-      description:
-        "A simple advice generator app built with HTML, CSS, JavaScript, React. The app uses the Advice Slip JSON API to generate random advice.",
-      link: "/projects/frontend-mentor-challenges/advice-generator-app/dist/index.html",
+      link: "https://seancravener.github.io/Frontend-Mentor-Advice-Generator-App/",
       icon: "./images/web-document-icon.ico",
-      id: "FrontendMentor-Lvl2-1",
-      type: "iframe-viewer",
-      height: "500px",
-      links: [
-        {
-          name: "View Code on Github",
-          link: "https://github.com/SeanCravener/frontend-mentor-challenges/tree/main/level-2/advice-generator-app",
-        },
-        {
-          name: "View Challenge Page",
-          link: "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
-        },
-      ],
+    },
+    {
+      title: "Notifications Page",
+      link: "https://seancravener.github.io/Frontend-Mentor-Notifications-Page/",
+      icon: "./images/web-document-icon.ico",
+    },
+    {
+      title: "Interactive Rating Component",
+      link: "https://seancravener.github.io/Frontend-Mentor-Interactive-Rating-Component/",
+      icon: "./images/web-document-icon.ico",
+    },
+    {
+      title: "Four Card Feature Section",
+      link: "https://seancravener.github.io/Frontend-Mentor-Four-Card-Feature-Section/",
+      icon: "./images/web-document-icon.ico",
+    },
+    {
+      title: "Interactive Pricing Component",
+      link: "https://seancravener.github.io/Frontend-Mentor-Interactive-pricing-component/",
+      icon: "./images/web-document-icon.ico",
     },
   ],
 };
