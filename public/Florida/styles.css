@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: skyblue;
+}
+
+header {
+  margin: 25px 0 15px 0;
+}
+
+.main {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  background: #f2f2f2;
+  border: 5px solid #31517d;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.img-container,
+ul,
+.text-container {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.home-img {
+  width: 100%;
+  min-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  gap: 10px;
+}
+
+section {
+  margin: 10px;
+  padding-right: 10px;
+  border-right: 5px solid #31517d;
+}
+
+aside {
+  width: 20%;
+  padding: 10px 25px 10px 25px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #bf3751;
+}
+
+#active,
+a:hover {
+  text-decoration: underline;
+  color: #f37c61;
+}
+
+.table-container-interior {
+  width: 65%;
+  padding: 0 15px;
+}
+
+.table-container-home {
+  border-top: 5px solid #31517d;
+  padding: 25px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+tr,
+th,
+td {
+  border: 1px solid #31517d;
+  padding: 5px;
+}
+
+th {
+  background-color: skyblue;
+  color: black;
+  text-align: left;
+}
+
+.sources-container {
+  padding: 0 15px;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+td,
+i,
+sub {
+  font-size: 0.9em;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {
+  width: 45%;
+  height: 175px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#card1 {
+  float: left;
+}
+
+#card2 {
+  position: relative;
+  top: 10px;
+}
+
+.absolute-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ffeb3b;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Media Queries */
+
+@media (max-width: 945px) {
+  .container {
+    flex-flow: column;
+  }
+
+  .main {
+    flex-flow: column;
+    margin: 0 10px;
+  }
+
+  .container p {
+    max-width: 100%;
+  }
+
+  .img-container {
+    align-items: center;
+  }
+
+  .home-img {
+    min-width: 300px;
+  }
+
+  section {
+    border-right: none;
+    padding: 0;
+  }
+
+  .table-container {
+    width: 100%;
+  }
+}
